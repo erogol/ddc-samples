@@ -16,22 +16,22 @@
   </head>
 
   <body>
-    <h1 style="color: black; border-bottom: 1px solid black;">🐸💬 Coqui TTS - Double Decoder Consistency Samples.</h1>
+    <h1 style="color: black; border-bottom: 1px solid black;">🐸💬 Coqui TTS - Double Decoder Consistency v2 Samples.</h1>
     <div>
       <p>
-        The purpose of this page is to show the strength of the DDC in order to train reliable 🐸TTS models in a very short time with a robust attention alignment and faster than real-time inference performance.
+        This page presents audio samples of a text-to-speech model using Double Decode Consitency (DDC) method that is able to train robust and high-quality TTS models, in a very short time with a robust attention alignment and faster than real-time inference performance.
       </p>
       <p>
-        <b>Model Details:</b> These samples are generated using DDC model and MultiBand-MelGAN vocoder. DDC was trained 90k steps using a single GPU for 2 days as explained in the blog post. The vocoder was trained using real spectrograms for 1 million steps.
-        These models provide speech synthesis with ~0.1 real-time factor on a GPU and ~0.35 on a CPU.
+        <b>Model Details:</b> These samples are generated using a DDC model and a HiFiGAN vocoder. The DDC model was trained 90k steps using a single GPU for 2 days as explained in the blog post. The vocoder was trained using real spectrograms for 250K steps.
+        These models provide speech synthesis with ~0.12 real-time factor on a GPU and ~1.02 on a CPU.
       </p>
+      <p>
+          <b>Note that</b> the DDC model is trained with raw characters and this causes some pronunciation errors in some examples due to the non-phonemic nature of the English language.
+     </p>
       <p>
         <b>Coqui TTS:</b> <a href="https://github.com/coqui-ai/TTS">https://github.com/coqui-ai/TTS</a><br/>
-        <b>Blog Post:</b> <a href='https://erogol.com/solving-attention-problems-of-tts-models-with-double-decoder-consistency/'>here.</a>
+        <b>Blog Post:</b> <a href='https://coqui.ai/blog/tts/solving-attention-problems-of-tts-models-with-double-decoder-consistency'>here.</a>
       </p>
-    </div>
-    <div>
-    <audio controls preload="none"><source src="wavs/intro.wav"></audio>
     </div>
     <div>
       <h2>😀 Basic Samples</h2>
